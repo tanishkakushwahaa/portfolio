@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form</title>
+</head>
+<body bgcolor="lavender">
+    <form action="practice.html" method="post">
+        <fieldset>
+            <legend>Login info</legend>
+        <lable>User name</lable>
+        <input type="text" name="username" Placeholder="Enter username"/><br><br>
+        <lable>Password</lable>
+        <input type="password" name="pass" Placeholder="Enter your password"/><br>
+        </fieldset><br>
+        <label for="age">Enter your age</label>
+        <input type="number" name="age" min="1" max="110"/>Years<br>
+        <input type="range" name="age" value="20" min="1" max="110"/>Years<br>
+        <label for="date">D.O.B</label>
+        <input type="date" name="dob"/><br>
+        <label for="color" >Choose color</label>
+        <input type="color" name="color"/><br>
+
+        <lable for Branch>Choose your branch</lable>
+        <input type="radio" name="branch" value="IT" checked/>IT
+        <input type="radio" name="branch" value="CS"/>CS
+        <input type="radio" name="branch" value="MT"/>MT<br>
+
+        <label for Hobbies>Your Hobbies</label> 
+        <input type="Checkbox" name="Hobbies" value="R" checked>Reading
+        <input type="checkbox" name="Hobbies" value="S">Singing
+        <input type="Checkbox" name="Hobbies" value="W">Writting 
+        <input type="checkbox" name="Hobbies" value="D">Dancing<br>
+        
+        <input type="reset" name="reset" value="Reset"/>
+        <input type="Submit" name="submit" value="login"/>
+        <input type="button" name="register" value="Register"/><br><br>
+        <label>Enter your address</label>
+        <textarea name="address" rows="5" col="30" placeholder="Enter your address"></textarea><br>
+        <label for="state">State</label>
+        <label for="city">City</label>
+        <input type="text" name="city" list="ct"/><br>
+        <datalist id="ct">
+            <option>Tonk</option>
+            <option>Jaipur</option>
+            <option>Jodhpur</option>
+            <option>Jalore</option>
+
+        <select name="state" size="2" multiple >
+            <option value="RJ">Rajasthan</option>
+            <option value="UK">UttarKhand</option>
+            <option value="P">Punjab</option>
+            <option value="HR">Haryana</option>
+        </select>
+    </form>
+</body>
+</html>

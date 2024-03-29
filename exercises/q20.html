@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <button onclick="starttimer()">start</button>
+    <button onclick="stoptimer()">stop</button>
+<p id="timerdisplay">timer: 0 second</p>
+<script>
+    let timer;
+    let seconds=0;
+    function starttimer(){
+        timer=setInterval(function(){
+            seconds++;
+            updatetimerdisplay();
+        },1000);
+        
+    }
+    function stoptimer(){
+            clearInterval(timer);
+        }
+    function updatetimerdisplay(){
+        const timerdisplay=document.getElementById('timerdisplay');
+        timerdisplay.textContent=`Timer: ${seconds} second`;
+    }
+
+</script>
+</body>
+</html>

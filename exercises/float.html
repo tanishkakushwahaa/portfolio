@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Layout Template</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+        header {
+            background-color: #333;
+            color: #fff;
+            padding: 20px;
+            text-align: center;
+            border-bottom: 2px solid #fff;
+        }
+        .content-container {
+            overflow: hidden; /* Clearfix */
+        }
+        .column {
+            float: left;
+            width: 50%;
+            padding: 20px;
+            border: 2px solid #ccc;
+            box-sizing: border-box; /* Include padding in width */
+        }
+        .column:nth-child(even) {
+            background-color: #f2f2f2;
+        }
+        .column:nth-child(odd) {
+            background-color: #e0e0e0;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Header</h1>
+    </header>
+    <div class="content-container">
+        <div class="column">
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed eget ipsum sit amet tortor molestie maximus. Vivamus vestibulum ligula nec purus scelerisque, ut ullamcorper nisi gravida. Sed eget nisi at leo consequat lacinia.</p>
+        </div>
+        <div class="column">
+            <p>Integer in erat id elit ultricies cursus. Nullam vehicula nisl ac luctus rutrum. Mauris vestibulum eros ut justo malesuada, vitae commodo odio commodo. Morbi pulvinar nulla at mauris fringilla, a pulvinar nulla tempor.</p>
+        </div>
+    </div>
+</body>
+</html>

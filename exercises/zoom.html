@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Image Transformation</title>
+    <style>
+        .image-container {
+            display: flex;
+            justify-content: space-around;
+            margin-top: 50px;
+        }
+        img {
+            width: 200px;
+            height: auto;
+            transition: transform 0.3s ease-in-out;
+        }
+        img:hover {
+            transform: scale(1.2);
+        }
+    </style>
+</head>
+<body>
+    <div class="image-container">
+        <img src="images/19.jpg" alt="Image 1">
+        <img src="dubai.jpg" alt="Image 2">
+        <img src="about.jpg" alt="Image 3">
+        <img src="images/4.jpeg" alt="Image 4">
+    </div>
+</body>
+</html>
