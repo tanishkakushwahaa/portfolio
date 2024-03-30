@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Document</title>
+</head>
+
+<body>
+    <button onclick="clearInterval(int1)"> Click IT (^~^) </button>
+    <div id="display">0</div>
+    <script>
+       /* a = prompt("enter a number:")
+        b = prompt("enter another number:")
+        c = parseInt(a)+parseInt(b);
+        message = a + "+" + b + "=" + c;
+        document.write(message)
+        alert(message)*/
+        count = 0;
+        display = document.getElementById("display")
+        bgs=["pink","peach","violet","darkviolet"]
+        i=0;
+        function clickCount()
+        {   
+           
+            count++;
+            display.innerHTML = count;
+            document.body.style.backgroundColor=bgs[i];
+            i++
+            if(i>=bgs.length)
+              i=0;
+              
+
+        }
+        int1 = setInterval(clickCount,100)
+    </script>
+</body>
+</html>

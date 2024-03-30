@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Text Growing and Shrinking</title>
+    <style>
+        #text {
+            color: red;
+            font-size: 10pt;
+        }
+    </style>
+</head>
+<body>
+    <div id="text">TEXT-GROWING</div>
+    <script>
+        let fontSize = 10;
+        let growing = true;
+
+        function changeTextSize() {
+            const textElement = document.getElementById('text');
+
+            if (growing) {
+                fontSize++;
+                textElement.style.fontSize = fontSize + 'pt';
+                if (fontSize >= 50) {
+                    textElement.style.color = 'blue';
+                    textElement.textContent = 'TEXT-SHRINKING';
+                    growing = false;
+                }
+            } else {
+                fontSize--;
+                textElement.style.fontSize = fontSize + 'pt';
+                if (fontSize <= 5) {
+                    clearInterval(intervalId);
+                }
+            }
+        }
+
+        const intervalId = setInterval(changeTextSize, 100);
+    </script>
+</body>
+</html>
